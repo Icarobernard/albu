@@ -16,9 +16,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="p-5" >
+      <main className="p-5 bg-gray-900" >
         <div className="bg-purple-900 p-3 rounded-xl text-center">
-          <h1 className="font-medium">Welcome 2023 ?</h1>
+          <h1 className="font-medium text-white">Welcome 2023 ?</h1>
         </div>
         {songs.map((value, index) => {
           return <div key={index} className="mt-5">

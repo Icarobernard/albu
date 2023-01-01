@@ -7,7 +7,7 @@ type Card = { phrase: string, name: string, artist: string, image: string, sound
 export default function Card({ phrase, name, artist, image, sound }: Card) {
     return (
         <div>
-            <figure className="md:flex bg-slate-100 rounded-xl md:p-2 dark:bg-slate-800">
+            <figure className="md:flex bg-slate-800 rounded-xl md:p-2 dark:bg-slate-800">
                 {/* <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512"> */}
 
                 <Image
@@ -20,19 +20,19 @@ export default function Card({ phrase, name, artist, image, sound }: Card) {
                 />
                 <div className="pt-6 md:p-8 text-center md:text-left space-y-4 w-full">
                     <blockquote>
-                        <p className="text-lg font-medium">
+                        <p className="text-lg font-medium text-white">
                             {phrase}
                         </p>
                     </blockquote>
                     <figcaption className="font-medium">
-                        <div className="text-sky-500 dark:text-purple-400">
+                        <div className="text-purple-400 dark:text-purple-400">
                             {name}
                         </div>
-                        <div className="text-slate-700 dark:text-slate-500">
+                        <div className="text-slate-500 dark:text-slate-500">
                             {artist}
                         </div>
                     </figcaption>
-                    <AudioPlayer className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800"
+                    <AudioPlayer className="md:flex bg-slate-800 rounded-xl p-8 md:p-0 dark:bg-slate-800"
                         src={sound}
                         onPlay={e => console.log(e)}
                         style={{ backgroundColor: '#334155' }}
