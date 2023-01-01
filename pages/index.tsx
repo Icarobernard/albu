@@ -21,7 +21,7 @@ export default function Home() {
           <h1 className="font-medium">Welcome 2023 ?</h1>
         </div>
         {songs.map((value, index) => {
-          return <div className="mt-5">
+          return <div key={index} className="mt-5">
             <Card artist={value.artist} phrase={value.phrase} name={value.name} image={value.image} sound={value.sound} />
           </div>
         })}
